@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOOCHÉEL - Productos</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header header-small"> 
+        <div class="menu container">
+            <a href="index.html" class="logo">
+                <img src="images/logo_KOOCHÉEL.png" alt="Logo KOOCHÉEL" class="logo-img">
+            </a>
+            <input type="checkbox" id="menu">
+            <label for="menu"></label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li> 
+                     <li><a href="elaboracion.html">Elaboración</a></li> 
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li> </ul>
+            </nav>
+            <div class="submenu">
+                <img src="images/car.svg" id="img-carrito" alt="Carrito de compras">
+                <div id="carrito">
+                    <table id="lista-carrito">
+                        <thead>
+                            <tr>
+                                <th>Imagen</th>
+                                <th>Nombre</th>
+                                <th>Precio</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody></tbody>
+                    </table>
+                    <a href="#" id="vaciar-carrito" class="btn-1">Vaciar Carrito</a>
+                </div>
+            </div>
+            </div>
+        </header>
+
+    <section class="promotion">
+        <div class="container promotion-content">
+            <div class="promotion-txt">
+                <h2>El significado de cada color</h2>
+                <p>
+                    Nuestra paleta de colores está inspirada en la naturaleza y en los procesos artesanales, 
+                    combinando tonos verdes que evocan equilibrio y sostenibilidad, azules que transmiten calma y 
+                    confianza, y matices lilas que reflejan creatividad y sensibilidad artística. Estos colores, 
+                    acompañados de blancos suaves, comunican pureza y cuidado en cada producto, resaltando la esencia 
+                    natural y el carácter hecho a mano de nuestras creaciones.
+                </p>
+            </div>
+            <div class="promotion-img">
+                <img src="images/acuarelas.png" alt="Caja de acuarelas KOOCHÉEL">
+            </div>
+        </div>
+    </section>
+
+    <section class="product container">
+        <h2>Nuestros Productos Destacados</h2>
+        <p> </p>
+        <div class="product-content">
+            <div class="ofert-1">
+                <img src="images/acuarelasp.png" alt="Producto 1">
+                <h3>Set Básico de 12</h3>
+                <p class="product-txt">Acuarelas orgánicas esenciales para principiantes.</p>
+                <p class="precio">$480.00</p>
+                <a href="#" class="btn-3 agregar-carrito" data-id="1">Añadir al Carrito</a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="seccion" id="Contactos">
+        <div class="container">
+            <div class="row">
+                <div class="columna columna-25 columna-mobile-100">
+                </div>
+
+                <div class="columna columna-25 columna-mobile-100">
+                    <h3>Datos de Contacto</h3>
+                    <ul>
+                        <li>koocheela@gmail.com</li>
+                        <li>5647678356</li>
+                        <li>Tecnológico de Cuautitlán Izcalli<br>TESCI</li>
+                    </ul>
+                </div>
+
+                <div class="columna columna-25 columna-mobile-100">
+                    <h3>Redes Sociales</h3>
+                    <ul class="redes">
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="barra-footer">
+            &copy; Derechos Reservados - 2025
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

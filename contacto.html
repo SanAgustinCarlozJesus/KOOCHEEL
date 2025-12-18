@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KOOCHÉEL - Contacto</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+       
+        .contact-section {
+            padding: 80px 20px;
+            text-align: center;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: 30px auto;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            background-color: #ffffff;
+        }
+        .contact-form label, .contact-form input, .contact-form textarea {
+            display: block;
+            width: 100%;
+            margin-bottom: 15px;
+            text-align: left;
+        }
+        .contact-form input, .contact-form textarea {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .contact-form button {
+            background-color: #4A85A3;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        .contact-form button:hover {
+            background-color: #1E8449;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header header-small">
+        <div class="menu container">
+            <a href="index.html" class="logo">
+                <img src="images/logo_KOOCHÉEL.png" alt="Logo KOOCHÉEL" class="logo-img">
+            </a>
+            <input type="checkbox" id="menu">
+            <label for="menu"></label>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="nosotros.html">Nosotros</a></li>
+                     <li><a href="elaboracion.html">Elaboración</a></li>  
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li> 
+                </ul>
+            </nav>
+            </div>
+        </header>
+
+    <section class="contact-section container">
+    <h2>Contáctanos</h2>
+    <p>Estamos aquí para responder todas tus preguntas sobre nuestros productos naturales.</p>
+    
+    <div class="contact-form">
+    <form action="https://api.web3forms.com/submit" method="POST">
+        
+        <input type="hidden" name="access_key" value="06b510dc-2407-44e3-89e4-414eb733ed71">
+
+        <label for="name">Nombre:</label>
+        <input type="text" name="name" id="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+
+        <label for="message">Mensaje:</label>
+        <textarea name="message" id="message" rows="6" required></textarea>
+
+        <input type="hidden" name="from_name" value="KOOCHÉEL Contacto">
+        <input type="hidden" name="subject" value="Nuevo mensaje de cliente">
+
+        <button type="submit">Enviar Mensaje</button>
+    </form>
+</div>
+</section>
+
+    <footer class="seccion" id="Contactos">
+        <div class="container">
+            <div class="row">
+                <div class="columna columna-25 columna-mobile-100">
+                </div>
+
+                <div class="columna columna-25 columna-mobile-100">
+                    <h3>Datos de Contacto</h3>
+                    <ul>
+                        <li>koocheela@gmail.com</li>
+                        <li>5647678356</li>
+                        <li>Tecnológico de Cuautitlán Izcalli<br>TESCI</li>
+                    </ul>
+                </div>
+
+                <div class="columna columna-25 columna-mobile-100">
+                    <h3>Redes Sociales</h3>
+                    <ul class="redes">
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-whatsapp"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="barra-footer">
+            &copy; Derechos Reservados - 2025
+        </div>
+    </footer>
+
+</body>
+</html>
