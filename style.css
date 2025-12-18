@@ -9,9 +9,16 @@ list-style: none;
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
 font-family: "Poppins", sans-serif;
 background-color: #E0F2F1;
 background-attachment: fixed;
+}
+main, .container-principal {
+    flex: 1;
 }
 
 img{
