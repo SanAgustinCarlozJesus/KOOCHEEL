@@ -58,10 +58,9 @@ label[for="menu"] {
     color: #004D4D;
 }
 
-/* Mostrar el icono solo en pantallas pequeñas */
 @media (max-width: 991px) {
     label[for="menu"] {
-        display: block; /* Aquí se hace visible en el teléfono */
+        display: block; 
         padding: 20px;
     }
 }
@@ -155,7 +154,6 @@ max-width: 450px;
 line-height: 1.6;
 margin: 0 0 25px 0;
 text-align: left;
-
 }
 
 .header-txt h1 {
@@ -314,7 +312,6 @@ gap: 30px;
 margin-bottom: 50px;
 }
 
-/* --- SECCIÓN FOOTER (Corregida a Negro/Blanco) --- */
 footer.seccion {
     background-color: #000000;
     color: #FFFFFF;
@@ -390,9 +387,8 @@ footer h3 {
     }
 }
 
-/* --- ESTILOS PÁGINA NOSOTROS --- */
 .mvv {
-padding: 20px 0 180px 0;
+padding: 80px 0 100px 0;
 text-align: center;
 display: flex;
 flex-direction: column;
@@ -407,7 +403,7 @@ margin-bottom: 15px;
 }
 
 .mvv-content {
-padding: 150px;
+padding: 80px 100px;
 max-width: 1200px;
 width: 90%;
 display: flex;  
@@ -462,10 +458,6 @@ cursor: pointer;
     flex-shrink: 0;
     transition: transform 0.3s ease;
 }
-
-
-
-
 
 .carrusel-display {
     width: 100%;
@@ -533,9 +525,6 @@ cursor: pointer;
     text-align: center;
 }
 
-
-
-
 #carrito {
     display: none;
     position: absolute;
@@ -574,8 +563,8 @@ cursor: pointer;
     width: 70px !important;
     height: auto;
     border-radius: 5px;
-    
 }
+
 #lista-carrito td, #lista-carrito th {
     color: #333333;
     padding: 10px;
@@ -590,48 +579,15 @@ cursor: pointer;
     font-weight: bold;
 }
 
-
-
-
+/* SOLO AJUSTES DE TAMAÑO PARA CELULAR SIN BORRAR NADA DE ARRIBA */
 @media(max-width:991px){
-    /* 1. Ajuste del Menú Desplegable */
-    .menu .navbar {  
-        background-color: #B2DFDB; 
-        display: none;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        width: 100%;
-        z-index: 1000;
-        flex-direction: column;
-    }  
-
-    .menu .navbar ul li {
-        width: 100%;
-        float: none;
-    }
-
-    #menu:checked ~ .navbar {  
-        display: block; 
-    }  
-
-    /* 2. Ajuste de los títulos (KOOCHÉEL y ACARIS) */
-    .header-txt h1, .promotion-txt h1 {
-        font-size: 38px; /* Tamaño reducido para que no se corten en el celular */
-        margin-bottom: 15px;
-    }
-
-    /* 3. Alineación en móviles */
-    .header-content, .promotion-content {
-        flex-direction: column; /* Apila imagen y texto */
-        text-align: left;       /* Mantiene el inicio a la izquierda */
-        padding: 40px 20px;
-        gap: 30px;
-    }
-
-    .header-txt, .promotion-txt {
-        width: 100%;
-        padding: 0;
-    }
+    .header-txt h1, .promotion-txt h1 { font-size: 38px; }
+    .header-content, .promotion-content { flex-direction: column; padding: 40px 20px; gap: 30px; }
+    .header-txt, .promotion-txt { width: 100%; text-align: center; }
+    .header-txt p { margin: 0 auto 25px auto; }
+    .mvv-content { padding: 20px; }
+    .mvv-box:nth-child(n) { flex: 1 1 100%; }
+    .product-content { grid-template-columns: 1fr; }
+    .menu .navbar { background-color: #B2DFDB; display: none; position: absolute; top: 100%; left: 0; width: 100%; z-index: 1000; }
+    #menu:checked ~ .navbar { display: block; }
 }
