@@ -16,7 +16,12 @@ body {
 font-family: "Poppins", sans-serif;
 background-color: #E0F2F1;
 background-attachment: fixed;
+
 }
+section.contact-section {
+    flex: 1;
+}
+
 main, .container-principal {
     flex: 1;
 }
@@ -250,7 +255,7 @@ margin-bottom: 20px;
 }
 
 .promotion {
-padding: 150px 0;
+padding: 40px 0;
 background-color: #E0F2F1;
 }
 
@@ -307,7 +312,7 @@ background-color: #1E8449;
 }
 
 .product {
-padding: 100px 0;
+padding: 4px 0;
 text-align: center;
 background: transparent;
 }
@@ -394,8 +399,18 @@ footer h3 {
     }
 }
 
+.texto-artesanal {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #000000;
+    max-width: 800px;
+    margin: 20px auto 50px auto;
+    text-align: center;
+}
+
+
 .mvv {
-padding: 80px 0 100px 0;
+padding: 20px 0 20px 0;
 text-align: center;
 display: flex;
 flex-direction: column;
@@ -410,7 +425,7 @@ margin-bottom: 15px;
 }
 
 .mvv-content {
-padding: 80px 100px;
+padding: 20px 100px;
 max-width: 1200px;
 width: 90%;
 display: flex;  
@@ -587,6 +602,13 @@ cursor: pointer;
 }
 
 /* SOLO AJUSTES DE TAMAÑO PARA CELULAR SIN BORRAR NADA DE ARRIBA */
+@media(max-width:600px){
+    .texto-artesanal{
+        font-size: 16px;
+        margin: 10px auto 30px auto;
+    }
+} /* <--- Esta llave faltaba */
+
 @media(max-width:991px){
     .header-txt h1, .promotion-txt h1 { font-size: 38px; }
     .header-content, .promotion-content { flex-direction: column; padding: 40px 20px; gap: 30px; }
